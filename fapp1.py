@@ -13,9 +13,14 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS comp(
   Name text NOT NULL,
   Category text NOT NULL,
   Units text NOT NULL,
-  Price of pack text NOT NULL,
-  Package, gr. integer,
-  Cost of 1 gram, decimal);""")
+  Price decimal NOT NULL,
+  Package integer,
+  Cost decimal);""")
+
+cursor.execute("""INSERT INTO comp(id, Name, Category, Units, Price, Package, Cost)
+VALUES("1", "Яйца", "яйца", "piece", "28.50", "1", "2.85")""")
+db.commit()
+db.close()
   
 
 
