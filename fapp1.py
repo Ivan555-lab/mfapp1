@@ -1,6 +1,7 @@
 #it is place for dev
 #f28_1  next1
-#f28_2 start of dev 
+#f28_2 start of dev
+# next step of dev (step 3)
 
 
 import sqlite3
