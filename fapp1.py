@@ -3,8 +3,8 @@
 #f28_2 start of dev
 # next step of dev (step 3)
 # step 4
-# step5 
-
+# step5
+# step6
 
 import sqlite3
 
