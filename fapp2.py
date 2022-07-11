@@ -11,4 +11,7 @@ def addtolist():
     newcost = scost.get()
     cursor.execute("""INSERT INTO comp (id, Name, Category, Units, Price, Package, Cost)
 VALUES(?, ?, ?, ?, ?, ?, ?)""",(newid, newname, newcategory, newunit, newprice, newunit, newcost))
-
+    db.commit()
+    sid.delete(0, END)
+    
+    
