@@ -16,11 +16,18 @@ sname = Entry(text="")
 sname.place(x = 180, y = 80, width = 200, height = 25)
 sname.focus()
 
-label3 = Label(text = "Enter component category: ")
+label3 = Label(text = "Enter  category: ")
 label3.place(x = 30, y = 125)
 scategory = Entry(text = "")
 scategory.place(x = 180, y = 125, width = 200, height = 25)
 scategory.focus()
+
+label4 = Label(text = "Enter units: ")
+label4.place(x = 30, y = 170)
+sunits = Entry(text = "")
+sunits.place(x = 180, y = 170, width = 200, height = 25)
+suints.focus()
+
 
 
 
