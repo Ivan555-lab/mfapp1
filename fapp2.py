@@ -20,6 +20,17 @@ VALUES(?, ?, ?, ?, ?, ?, ?)""",(newid, newname, newcategory, newunits, newprice,
     spackage.delete(0, END)
     scost.delete(0, END)
     sname.focus()
+
+def clearlist():
+    sid.delete(0, END)
+    sname.delete(0, END)
+    scategory.delete(0, END)
+    sunits.delete(0, END)
+    sprice.delete(0, END)
+    spackage.delete(0, END)
+    scost.delete(0, END)
+    sname.focus()
+    
     
     
     
