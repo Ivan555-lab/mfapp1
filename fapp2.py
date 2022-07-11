@@ -28,6 +28,13 @@ sunits = Entry(text = "")
 sunits.place(x = 180, y = 170, width = 200, height = 25)
 suints.focus()
 
+label5 = Label(text = "Enter price: ")
+label5.place(x = 30, y = 215)
+sprice = Entry(text = "")
+sprice.place(x = 180, y = 215, width = 200, height = 25)
+sprice.focus()
+
+
 
 
 
