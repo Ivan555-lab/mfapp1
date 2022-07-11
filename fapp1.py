@@ -17,7 +17,10 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS comp(
 
   
 
+
+
+
 cursor.execute("""INSERT INTO comp(id, Name, Category, Units, Price, Package, Cost)
-VALUES("2", "Горох колотый", "Бакалея", "гр.", "35.99", "1000", "3.59")""")
+VALUES("3", "Вермешель", "Бакалея", "гр.", "24.96", "450", "5,54")""")
 db.commit()
-db.close()   
+db.close()
