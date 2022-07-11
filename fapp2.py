@@ -30,6 +30,9 @@ def clearlist():
     spackage.delete(0, END)
     scost.delete(0, END)
     sname.focus()
+
+with sqlit3.connect("fapp1.db") as db:
+    cursor = db.cursor()
     
     
     
