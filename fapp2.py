@@ -40,13 +40,17 @@ spackage = Entry(text = "")
 spackage.place(x = 180, y = 260, width = 200, height = 25)
 spackage.focus()
 
-
+label7 = Label(text = "Enter cost: ")
+label7.place(x = 30, y = 305)
+scost = Entry(text = "")
+scost.place(x = 180, y = 305, width = 200, height = 25)
+scost.focus()
 
 
 
 
 window.mainloop()
-db.close()
+#db.close()
 
                 
                 
