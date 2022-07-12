@@ -11,7 +11,7 @@ def addtolist():
     newpackage = spackage.get()
     newcost = scost.get()
     cursor.execute("""INSERT INTO comp (id, Name, Category, Units, Price, Package, Cost)
-VALUES(?, ?, ?, ?, ?, ?, ?)""",(newid, newname, newcategory, newunits, newprice, newunit, newcost))
+VALUES(?, ?, ?, ?, ?, ?, ?)""",(newid, newname, newcategory, newunits, newprice, newunits, newcost))
     db.commit()
     sid.delete(0, END)
     sname.delete(0, END)
@@ -83,9 +83,9 @@ scost.place(x = 180, y = 305, width = 200, height = 25)
 scost.focus()
 
 addbtn = Button(text = "Add", command = addtolist)
-addbtn.place(x = 150, y = 325, width = 75, height = 25)
+addbtn.place(x = 150, y = 345, width = 75, height = 25)
 clearbtn = Button(text = "Clear", command = clearlist)
-clearbtn.place(x = 250, y = 325, width = 75, height = 25)
+clearbtn.place(x = 250, y = 345, width = 75, height = 25)
 
 
 
