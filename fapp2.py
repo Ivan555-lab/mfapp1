@@ -11,7 +11,7 @@ def addtolist():
     newpackage = spackage.get()
     newcost = scost.get()
     cursor.execute("""INSERT INTO comp (id, Name, Category, Units, Price, Package, Cost)
-VALUES(?, ?, ?, ?, ?, ?, ?)""",(newid, newname, newcategory, newunits, newprice, newunits, newcost))
+VALUES(?, ?, ?, ?, ?, ?, ?)""",(newid, newname, newcategory, newunits, newprice, newpackage, newcost))
     db.commit()
     sid.delete(0, END)
     sname.delete(0, END)
