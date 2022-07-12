@@ -32,7 +32,7 @@ def clearlist():
     scost.delete(0, END)
     sname.focus()
 
-with sqlit3.connect("fapp1.db") as db:
+with sqlite3.connect("fapp1.db") as db:
     cursor = db.cursor()
     
 
@@ -82,6 +82,10 @@ scost = Entry(text = "")
 scost.place(x = 180, y = 305, width = 200, height = 25)
 scost.focus()
 
+addbtn = Button(text = "Add", command = addtolist)
+addbtn.place(x = 150, y = 325, width = 75, height = 25)
+clearbtn = Button(text = "Clear", command = clearlist)
+clearbtn.place(x = 250, y = 325, width = 75, height = 25)
 
 
 
